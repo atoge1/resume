@@ -1,0 +1,170 @@
+\documentclass[letterpaper, 10pt]{article}
+
+%==========%
+%PREAMBLE
+%==========%
+
+%packages
+\usepackage{hyperref} %hyperlinks
+\usepackage{titlesec}	%custom \section
+\usepackage[left=.5in,right=.5in,top= 0.35in, bottom= 0.35in]{geometry} %sets up margin
+\usepackage{blindtext} %lorem ipsum formatting
+\usepackage{fontawesome} %allows usage of \faHome
+\usepackage[none]{hyphenat} %prevent hyphens
+\usepackage{array} % allow left align left col
+\usepackage{enumitem}%align bullets
+\setlist[itemize]{leftmargin=*}
+
+
+%section setup
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{6pt} %left indent, top spacing, bottom spacing
+
+%modify medskip
+\setlength{\medskipamount}{12pt plus 4pt minus 4pt}
+
+
+%==========%
+%DOCUMENT START
+%==========%
+\begin{document}
+\pagenumbering{gobble}
+
+%==========%
+%TITLE
+%==========%
+\begin{center}
+  \huge{\textbf{Aaron Togelang}} \medskip \\
+  %\large{\textit{insert description here - maybe}} \\
+  \large{\ \normalsize{\faHome} \ 2523 Ridge Rd Apt 105, Berkeley, CA 94709 $|$ \ \normalsize{\faPhone} \ 626 215 0885 $|$ \ \normalsize{\faEnvelope} \ \href{mailto:atoge1@berkeley.edu}{atoge1@berkeley.edu}}
+\end{center}
+
+
+%==========%
+%PERSONAL INFO
+%==========%
+%\section{Personal Information}
+%
+%\begin{tabular}{ll}
+%    \textsc{Address}   & 2700 Hearst Ave Ste 8C42E, Berkeley, CA 94720 \\
+%    \textsc{Phone}     & 626 215 0885\\
+%    \textsc{Email}     & \href{mailto:atoge1@berkeley.edu}{atoge1@berkeley.edu}
+%\end{tabular}
+%
+
+
+%==========%
+%WORK EXPERIENCE
+%==========%
+\section{Work Experience}
+
+\begin{flushleft}
+  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
+
+      \textsc{SB Furniture}   & \parbox[t]{5.75in}{\textbf{Mechanical Department Internship \hfill\textit{July 2016 - August 2016}}
+      \itemize
+      \item Assisted with resource planning (ERP) and automating assembly line processes.
+      \item Hands on experience inspecting and repairing mass productions systems.} \medskip \\
+
+      \textsc{Jisan Research Institute}   & \parbox[t]{5.75in}{ \textbf{Research Team Lead and Technical Writer \hfill\textit{June 2013 - December 2015}} \itemize
+      \item Improved the efficiency of solar updraft towers.
+      \item Designed, built, and managed testing devices with CAD, CFD, and general machining/woodworking skills.
+      \item Published and presented a paper based on results. } \smallskip \\
+  \end{tabular}
+\end{flushleft}
+%==========%
+%PROJECTS AND ACTIVITIES
+%==========%
+\section{Projects and Activities}
+\begin{flushleft}
+  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
+      \textsc{Space Sciences Laboratory Sponsored Research}   & \parbox[t]{5.75in}{ \textbf{Researcher \hfill\textit{June 2017 - present}}
+      \itemize
+      \item Worked with SSL to design and build a test platform for solid and liquid rocket motors (1000lbs thrust)
+      \item Worked with Ventions, LLC to design the solid and liquid rocket motors.} \medskip \\
+
+      \textsc{UC Berkeley Space Technogies and Rocketry (UCB STAR)}   & \parbox[t]{5.75in}{ \textbf{Logistics and Outreach \hfill\textit{August 2016 - present}}
+      \itemize
+      \item Organize trips (local and interstate) for 120+ members
+      \item Handle purchase requests and reimbursements for the team
+      \item Connected with and inspired about 300 elementary to high school students, and about 400 college students and adults.
+      \item Worked with Makerfaire to secure an exhibition spot at Makerfaire 2017.} \medskip \\
+
+      \textsc{UCB STAR Ursa Major (NASA Student Launch 2017 Rocket)}   & \parbox[t]{5.75in}{\textbf{Payload \hfill\textit{August 2016 - April 2017}}
+      \itemize
+      \item Designed and built a mechanism to land a 38" portion of our rocket upright, after locating and identifying three different ground targets.} \medskip \\
+
+      \textsc{Golden Bear Orientation Leader}   & \parbox[t]{5.75in}{\textbf{Orientation Leader \hfill\textit{August 2017}}
+      \itemize
+      \item Facilitated discussions covering
+      \item Scheduled and organized a week of events for incoming students} \medskip \\
+%      \textsc{First Robotics Competition}   & \parbox[t]{5.75in}{\textbf{Captain - Team 867 Absolute Value \hfill\textit{June 2015 - June 2016}}
+%      \itemize
+%      \item Overhauled team structure and improved competition score.
+%      \item Designed two robots, employing mechanum wheels, pneumatic actuators and solenoids, sensors, and electric actuators. Also worked with CAN communication and Java programming.} \\
+
+
+  \end{tabular}
+\end{flushleft}
+%==========%
+%EDUCATION
+%==========%
+\section{Education}
+\begin{flushleft}
+  \begin{tabular}{>{\raggedright}p{1.4in}  @{\hskip .2in} l}
+      \textsc{University of California, Berkeley}   & \parbox[t]{5.75in}{\textbf{BA in Mechanical Engineering/Materials Science and Engineering \hfill\textit{Expected 2020}} \smallskip \\ Minor in Electrical Engineering and Computer Science\\ GPA: 3.468
+      %Relevant Coursework: \\ \hspace*{1em} Engineering 7 - Computer Science for Engineers (MatLab) \\ \hspace*{1em} Engineering 25-27 - Engineering Design and Manufacturing \\ \hspace*{1em} Math 54 - Linear Algebra and Differential Equations\\
+      %\hspace*{1em} Math 53 - Multivariable Calculus
+       } \\
+
+%      \textsc{Arcadia High School, California}   & \parbox[t]{5.75in}{\textbf{High School Diploma  \hfill\textit{June 2016}}} \\
+
+  \end{tabular}
+\end{flushleft}
+
+%==========%
+%SKILLS
+%==========%
+\section{Skills}
+\begin{flushleft}
+  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip.2in} l}
+      \textsc{Software}   & \parbox[t]{5.75in}{AutoCAD, Inventor, Fusion 360, Illustrator, Photoshop, Solidworks, MS Office/Google Docs} \smallskip \\
+
+      \textsc{Programming}   & \parbox[t]{5.75in}{C, Java, bash, \LaTeX, MatLab} \smallskip \\
+
+      \textsc{Manufacturing}   & \parbox[t]{5.75in}{Composite Materials, Silicone Molding, 3D Printers, Laser Cutting, Welding, Enterprise Resource Planning, Machine Shop Tools, CAM, FEA} \smallskip \\
+
+      \textsc{Electronics}   & \parbox[t]{5.75in}{Raspberry Pi, Arduino, Soldering, Wiring, Data Collection, Actuators (Motors, Solenoids, Pneumatics)} \\
+  \end{tabular}
+\end{flushleft}
+
+%==========%
+%AWARDS AND HONORS
+%==========%
+
+%\section{Awards and Honors}
+%\begin{flushleft}
+%  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
+%      \textsc{JPL Invention Challenge}   & \parbox[t]{5.75in}{4th Place Finals 2014, 1st Place Regionals 2015}
+%  \end{tabular}
+%\end{flushleft}
+
+%==========%
+%PUBLICATIONS
+%==========%
+\section{Publications}
+\begin{flushleft}
+  \hspace*{.6em}S. Kazadi, M. Liang, A. Togelang, D. Chan Low Cost Solar Chimney Performance-Improving Enhancement. ICCE2015 Proceedings (September 14-16, 2015, Ottawa, Canada), p.43-49, 2015.
+\end{flushleft}
+
+
+
+%==========%
+%LANGUAGES
+%==========%
+\section{Languages}
+\begin{flushleft}
+  \hspace*{.6em}English (Native speaker), Indonesian (Intermediate), Thai (Basic), German (Basic), Chinese (Basic)
+\end{flushleft}
+
+\end{document}
