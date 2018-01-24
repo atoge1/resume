@@ -13,15 +13,20 @@
 \usepackage[none]{hyphenat} %prevent hyphens
 \usepackage{array} % allow left align left col
 \usepackage{enumitem}%align bullets
+\usepackage[sfdefault]{ClearSans} %% option 'sfdefault' activates Clear Sans as the default text font
+\usepackage[T1]{fontenc}
+
+\linespread{0.9}
 \setlist[itemize]{leftmargin=*}
+\setlist{nosep}
 
 
 %section setup
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\large\scshape\raggedright\textbf}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{6pt} %left indent, top spacing, bottom spacing
 
 %modify medskip
-\setlength{\medskipamount}{12pt plus 4pt minus 4pt}
+\setlength{\medskipamount}{8pt plus 4pt minus 4pt}
 
 
 %==========%
@@ -59,17 +64,19 @@
 \section{Work Experience}
 
 \begin{flushleft}
-  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
-
-      \textsc{SB Furniture}   & \parbox[t]{5.75in}{\textbf{Mechanical Department Internship \hfill\textit{July 2016 - August 2016}}
-      \itemize
+  \begin{tabular}{>{\raggedright}p{1.3in} @{\hskip .2in} l}
+      \textsc{Liwei Lin Lab (PI Renxiao Xu)} & \parbox[t]{5.75in}{\textbf{Mechanical Analysis Researcher \hfill\textit{August 2017 - present}} \begin{itemize}
+      \item Design and improve self-similar patterns used in stretchable electronics.
+      \item Simulate patterns as Copper-Polyimide composite layups and analyze stress-strain characteristics with Abaqus CAE.
+      \end{itemize}} \medskip \\
+      \textsc{SB Furniture}   & \parbox[t]{5.75in}{\textbf{Mechanical Department Internship \hfill\textit{July 2016 - August 2016}} \begin{itemize}
       \item Assisted with resource planning (ERP) and automating assembly line processes.
-      \item Hands on experience inspecting and repairing mass productions systems.} \medskip \\
-
-      \textsc{Jisan Research Institute}   & \parbox[t]{5.75in}{ \textbf{Research Team Lead and Technical Writer \hfill\textit{June 2013 - December 2015}} \itemize
-      \item Improved the efficiency of solar updraft towers.
-      \item Designed, built, and managed testing devices with CAD, CFD, and general machining/woodworking skills.
-      \item Published and presented a paper based on results. } \smallskip \\
+      \item Hands on experience inspecting and repairing mass productions systems.
+      \end{itemize}} \medskip \\
+      \textsc{Jisan Research Institute}   & \parbox[t]{5.75in}{ \textbf{Research Team Lead and Technical Writer \hfill\textit{June 2013 - December 2015}} \begin{itemize}
+      \item Studied the impact of increased airflow path on solar updraft tower efficiency, published and presented a paper based on results.
+      \item Designed, built, and managed an upgraded testing structure. Replaced an aging outdoor single-chamber solar collection box with an indoor multiple-chamber modular solar collection box. Revised structure reduced time needed to reconfigure by 3 hours and allowed more control over environmental factors such as light, wind, and rain.
+      \end{itemize}} \smallskip \\
   \end{tabular}
 \end{flushleft}
 %==========%
@@ -77,31 +84,31 @@
 %==========%
 \section{Projects and Activities}
 \begin{flushleft}
-  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
+  \begin{tabular}{>{\raggedright}p{1.3in} @{\hskip .2in} l}
       \textsc{Space Sciences Laboratory Sponsored Research}   & \parbox[t]{5.75in}{ \textbf{Researcher \hfill\textit{June 2017 - present}}
-      \itemize
-      \item Worked with SSL to design and build a test platform for solid and liquid rocket motors (1000lbs thrust)
-      \item Worked with Ventions, LLC to design the solid and liquid rocket motors.} \medskip \\
+      \begin{itemize}
+      \item Work with SSL to design and build a test platform for solid and liquid rocket motors (1000lbs thrust)
+      \item Work with Ventions, LLC to design the solid and liquid rocket motors.
+      \item Integrate MiniPIX Radiation Camera into Cosmic Ray Altitude Distribution (C-RAD) payload for a 30K+ sounding rocket
+      \end{itemize}} \medskip \\
 
       \textsc{UC Berkeley Space Technogies and Rocketry (UCB STAR)}   & \parbox[t]{5.75in}{ \textbf{Logistics and Outreach \hfill\textit{August 2016 - present}}
-      \itemize
-      \item Organize trips (local and interstate) for 120+ members
-      \item Handle purchase requests and reimbursements for the team
-      \item Connected with and inspired about 300 elementary to high school students, and about 400 college students and adults.
-      \item Worked with Makerfaire to secure an exhibition spot at Makerfaire 2017.} \medskip \\
+      \begin{itemize}
+      \item Organize trips (local and interstate) for 100+ members, and shipping for a competition rocket.
+      \item Manage budgeting for the team, specifically: defined funding periods, assigned and monitored internal subteam allocations, and handled purchase requests and reimbursements for the team.
+      \item Work with various companies to secure over \$5000 worth of donations.
+      \item Secured a private building at the Richmond Field Station and manage maintainance, acquisitions, and safety.
+      \end{itemize}} \medskip \\
 
       \textsc{UCB STAR Ursa Major (NASA Student Launch 2017 Rocket)}   & \parbox[t]{5.75in}{\textbf{Payload \hfill\textit{August 2016 - April 2017}}
-      \itemize
-      \item Designed and built a mechanism to land a 38" portion of our rocket upright, after locating and identifying three different ground targets.} \medskip \\
+      \begin{itemize}
+      \item Designed and built a mechanism to land a 38" portion of a rocket upright, after locating and identifying three different ground targets. Structure was 3d-printed and controlled via an onboard Raspberry Pi.
+      \end{itemize}} \smallskip \\
 
-      \textsc{Golden Bear Orientation Leader}   & \parbox[t]{5.75in}{\textbf{Orientation Leader \hfill\textit{August 2017}}
-      \itemize
-      \item Facilitated discussions covering
-      \item Scheduled and organized a week of events for incoming students} \medskip \\
 %      \textsc{First Robotics Competition}   & \parbox[t]{5.75in}{\textbf{Captain - Team 867 Absolute Value \hfill\textit{June 2015 - June 2016}}
-%      \itemize
+%      \begin{itemize}
 %      \item Overhauled team structure and improved competition score.
-%      \item Designed two robots, employing mechanum wheels, pneumatic actuators and solenoids, sensors, and electric actuators. Also worked with CAN communication and Java programming.} \\
+%      \item Designed two robots, employing mechanum wheels, pneumatic actuators and solenoids, sensors, and electric actuators. Worked with CAN communication and Java programming.} \\
 
 
   \end{tabular}
@@ -111,8 +118,8 @@
 %==========%
 \section{Education}
 \begin{flushleft}
-  \begin{tabular}{>{\raggedright}p{1.4in}  @{\hskip .2in} l}
-      \textsc{University of California, Berkeley}   & \parbox[t]{5.75in}{\textbf{BA in Mechanical Engineering/Materials Science and Engineering \hfill\textit{Expected 2020}} \smallskip \\ Minor in Electrical Engineering and Computer Science\\ GPA: 3.468
+  \begin{tabular}{>{\raggedright}p{1.3in}  @{\hskip .2in} l}
+      \textsc{University of California, Berkeley}   & \parbox[t]{5.75in}{\textbf{BS in Mechanical Engineering/Materials Science and Engineering \hfill\textit{Expected 2020}} \smallskip \\ Minor in Electrical Engineering and Computer Science\\ GPA: 3.264
       %Relevant Coursework: \\ \hspace*{1em} Engineering 7 - Computer Science for Engineers (MatLab) \\ \hspace*{1em} Engineering 25-27 - Engineering Design and Manufacturing \\ \hspace*{1em} Math 54 - Linear Algebra and Differential Equations\\
       %\hspace*{1em} Math 53 - Multivariable Calculus
        } \\
@@ -127,8 +134,8 @@
 %==========%
 \section{Skills}
 \begin{flushleft}
-  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip.2in} l}
-      \textsc{Software}   & \parbox[t]{5.75in}{AutoCAD, Inventor, Fusion 360, Illustrator, Photoshop, Solidworks, MS Office/Google Docs} \smallskip \\
+  \begin{tabular}{>{\raggedright}p{1.3in} @{\hskip.2in} l}
+      \textsc{Software}   & \parbox[t]{5.75in}{AutoCAD, Inventor, Fusion 360, Illustrator, Photoshop, Solidworks, Abaqus CAE, MS Office/Google Docs, OpenRocket} \smallskip \\
 
       \textsc{Programming}   & \parbox[t]{5.75in}{C, Java, bash, \LaTeX, MatLab} \smallskip \\
 
@@ -144,7 +151,7 @@
 
 %\section{Awards and Honors}
 %\begin{flushleft}
-%  \begin{tabular}{>{\raggedright}p{1.4in} @{\hskip .2in} l}
+%  \begin{tabular}{>{\raggedright}p{1.3in} @{\hskip .2in} l}
 %      \textsc{JPL Invention Challenge}   & \parbox[t]{5.75in}{4th Place Finals 2014, 1st Place Regionals 2015}
 %  \end{tabular}
 %\end{flushleft}
